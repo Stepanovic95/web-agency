@@ -1,0 +1,9 @@
+.about, .mission, .structure, .investor, .news, .offices {
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+body {
+    color: black;
+}

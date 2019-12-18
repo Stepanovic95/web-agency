@@ -1,46 +1,129 @@
 /* Universal styles */
+html{
+  background-color: black;
+}
 body {
   font-family: "Courier New", Courier, monospace;
-  background-image: url(pics/stars1.jpg);
+  /* background-image: url(pics/stars1.jpg); */
   background-size: cover;
+  background-color: black;
  
 }
+/* Nav bar */
+.desktop {
+  display: none;
+}
+
+.mobile {
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(113, 113, 113);
+  font-size: 18px;
+  font-weight: 400;
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.fa-rocket {
+  font-size: 30px;
+  font-family: 'FontAwesome';
+}
+
+.fa-bars {
+  font-size: 30px;
+  font-family: 'FontAwesome';
+  font-style: normal;
+}
+.intro{
+  margin-bottom: -1px;
+}
+
+/* .fa-bars:hover {
+  color: rgb(62, 231, 173);
+} */
+
+.dropbtn {
+  background-color: inherit;
+  color: rgb(113, 113, 113);
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #EFEFEF;
+  font-size: 12px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 12px;
+  border-bottom: rgb(113, 113, 113);
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: rgb(113, 113, 113);}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {color: rgb(62, 231, 173);}
+
+
+@media only screen and (min-width: 768px) {
 nav {
-  
+  font-family: 'Courier New', Courier, monospace;
   height: 150px;
   display: block;
   margin-bottom: 100px;
 }
-a {
+
+nav a {
   text-decoration: none;
   background-color: rgb(77, 103, 112);
   color: white;
   padding: 15px;
   border-radius: 10px;
   display: block;
-  
   text-align: center;
   margin-bottom: 10px;
 }
-h1{
+
+nav h1 {
   text-align: center;
   color: aliceblue;
 }
 
-a:hover {
+nav a:hover {
   background-color: rgb(160, 192, 202);
 }
-h3{
+
+nav h3 {
   text-align:center;
 }
 
-  
-
-.divhome{
- color: aliceblue;
+.divhome {
+  color: aliceblue;
   height: 320px;
   width: 100%;
   text-align: center;
+ }
+}
+#iIndex{
+  margin-top: 0px;
+  background-color: black;
 }
 
 input{
@@ -85,4 +168,16 @@ a {
     display: flex;
     justify-content: space-around;
   }
+  .carousel-inner{
+    background-color: black;
+   height: 500px;
+   background-image: url(../web-agency/pics/about-spot.png);
+  }
+  .carousel-item{
+    background-color: black;
+    height: 500px;
+    background-image: url(../web-agency/pics/about-spot.png);
+  }
+  
+ 
 }

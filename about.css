@@ -131,9 +131,10 @@ img {
     border-bottom: rgb(113, 113, 113);
     text-decoration: none;
     display: block;
+
 }
-  
 .dropdown-content a:hover {background-color: rgb(113, 113, 113);}
+
   
 .dropdown:hover .dropdown-content {display: block;}
   
@@ -147,7 +148,7 @@ nav {
     display: block;
     margin-bottom: 100px;
   }
-
+.dropdown-content a:hover {background-color: rgb(113, 113, 113);}
 nav a {
     text-decoration: none;
     background-color: rgb(77, 103, 112);

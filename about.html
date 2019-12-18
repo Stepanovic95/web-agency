@@ -5,18 +5,206 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="mainagency.css">
+    <!-- <link rel="stylesheet" href="mainagency.css"> -->
+    <link rel="stylesheet" href="about.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>About</title>
 </head>
 
 <body>
-    <nav>
+    <!-- Nav bar -->
+    <nav class="mobile">
+        <div>
+            <i class="fas fa-rocket"></i>
+            <span>AirSpace</span>
+        </div>
+
+        <div class="dropdown" style="float:right;">
+            <button class="dropbtn"><i class="fas fa-bars"></i></button>
+            <div class="dropdown-content" style="right:0;">
+                <a href="index.html">Homepage</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+    </nav>
+    <nav class="desktop">
         <a href="index.html">HOME</a>
         <a href="about.html">ABOUT</a>
         <a href="portfolio.html">PORTFOLIO</a>
-        <a href="Contact.html">CONTACT</a>
+        <a href="contact.html">CONTACT</a>
     </nav>
-    <h1>About</h1>
+
+    <!-- Introduction -->
+    <div class="intro">
+        <h2>Unlock beautiful space travels</h2>
+        <h1><span class="green">AirSpace</span> is the beating heart of modern space travels</h1>
+        <a href="#iAbout">DISCOVER ABOUT US <i class="fas fa-chevron-down"></i></a>
+    </div>
+
+
+    <!-- About -->
+    <div id="iAbout" class="about">
+        <h2>About Us</h2>
+        <h1>Modern space travels inspired by technology, driven by insights</h1>
+        <div class="separator"></div>
+        <p>Founded in 2019 in Belgrade, <span class="green">AirSpace</span> has grown from a small start-up to one of
+            the world’s leading
+            travel companies offering space travels.
+            <br>
+            <br>
+            We organize travels inside our Galaxy as well as in far-distance galaxies.
+        </p>
+        <img class="about-racket-1" src="pics/about-racket-1.webp" alt="">
+    </div>
+
+    <!-- Mission -->
+    <div class="mission">
+        <h2>Our mission</h2>
+
+        <h1><i class="fas fa-quote-right"></i>If you're someone who likes space when you sleep, this is the right
+            journey for you<i class="fas fa-quote-left"></i></h1>
+
+        <div class="separator"></div>
+        <p>Our mission is to make it easier for everyone to experience the space.</p>
+        <p>We are strongly commited to create the best travel experience for our customers.</p>
+        <img src="pics/about-2.jpg" alt="">
+    </div>
+
+    <!-- Team and organization -->
+    <div class="structure">
+        <h2>Our team</h2>
+        <div class="separator"></div>
+        <p>We are a group of people that represents the union between dynamicity and resourcefulness, guided by the
+            history of a company that realizes luxury space travels.</p>
+        <p>Get to know <span class="green">AirSpace's</span> crew below.</p>
+        <div class="team-members">
+            <div class="team">
+                <img src="pics/about-astronaut-1.jpeg" alt="">
+                <div class="team-info">
+                    <h2>Lazar Miljkovic</h2>
+                    <p>Command Module Pilot</p>
+                    <span class="green">Read more</span>
+                </div>
+            </div>
+            <div class="team m">
+                <img src="pics/about-astronaut-2.jpg" alt="">
+                <div class="team-info">
+                    <h2>Marko Stepanovic</h2>
+                    <p>Command Module Pilot</p>
+                    <span class="green">Read more</span>
+                </div>
+            </div>
+            <div class="team">
+                <img src="pics/about-astronaut-3.jpg" alt="">
+                <div class="team-info">
+                    <h2>Jelena Strbac</h2>
+                    <p>Mission Specialist</p>
+                    <span class="green">Read more</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Investor -->
+    <div class="investor">
+        <h2>Investor's relations</h2>
+        <div class="separator"></div>
+        <div class="share">
+            <p>Share Price</p>
+            <h1>EUR <i class="fas fa-arrow-down"></i>103.56 (-0.64%)</h1>
+        </div>
+        <p>Get the latest <span class="green">AirSpace</span> reports.</p>
+        <table>
+            <tr>
+                <th>Financial Statements</th>
+                <th>Annual Reports</th>
+            </tr>
+            <tr>
+                <td><a href="#" target="_blank">Balance Sheet (2019)</a></td>
+                <td><a href="#" target="_blank">2019 full report</a></td>
+            </tr>
+            <tr>
+                <td><a href="#" target="_blank">Income Statement (2019)</a></td>
+                <td><a href="#" target="_blank">2019 half year - h1</a></td>
+            </tr>
+            <tr>
+                <td><a href="#" target="_blank">Cash-Flow Statement (2019)</a></td>
+                <td></td>
+            </tr>
+        </table>
+        <input type="button" name="nDownload" id="iDownload" value="Download all">
+    </div>
+
+    <!-- News -->
+    <div class="news">
+        <h2>News</h2>
+        <div class="separator"></div>
+        <div class="first-news">
+            <div>
+                <img src="pics/about-news-Andromeda.jpg" alt="">
+            </div>
+            <div class="n-text">
+                <span class="grey">18 Dec 2019</span>
+                <h1>Traveling to Andromeda Galaxy</h1>
+                <p>AirSpace launching new racket to Andromeda Galaxy. As of 1 January 2020 our clients will be able to
+                    travel to Andromeda Galaxy and to visit new island of stars.</p>
+            </div>
+
+        </div>
+        <div class="latest-news">
+            <div class="n-img">
+                <img src="pics/about-news-mars-a1.jpg" alt="">
+            </div>
+            <div class="n-text">
+                <span class="grey">11 Dec 2019</span>
+                <p>Special offer for New Year - discount for Mars tours</p>
+                <span class="green">Read more</span>
+            </div>
+        </div>
+        <div class="latest-news">
+            <div class="n-img">
+                <img src="pics/about-news-No1.jpeg" alt="">
+            </div>
+            <div class="n-text">
+                <span class="grey">30 Nov 2019</span>
+                <p>AirSpace awareded as best travel Company in 2019</p>
+                <span class="green">Read more</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Offices -->
+    <div class="offices">
+        <h2>Offices</h2>
+        <div class="separator"></div>
+        <p>Global addreses</p>
+        <img id="map" src="pics/worldmap.png" alt="">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <h2>Follow us</h2>
+            <div class="follow-icons">
+                <a href="https://facebook.com"><img class="img" src="pics/facebook.jpg" alt="facebook" height="50px"
+                        width="50px"></a>
+                <a href="https://twitter.com"><img class="img" src="pics/twitter.jpg" alt="twitter" height="50px"
+                        width="50px"></a>
+                <a href="https://linkedin.com"><img class="img" src="pics/linkedin.jpg" alt="linkedin" height="50px"
+                        width="50px"></a>
+                <a href="https://youtube.com"><img class="img" src="pics/youtube.jpg" alt="youtube" height="50px"
+                        width="50px"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="grey">© 2019 AirSpace. All rights received</span>
+        </div>
+    </footer>
+
 </body>
 
 </html>

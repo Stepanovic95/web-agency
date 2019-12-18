@@ -1,0 +1,47 @@
+.row {
+    margin: 15px;
+  }
+body {
+background-image: url(https://scx2.b-cdn.net/gfx/news/hires/2012/andromedawan.jpg); 
+size: cover;
+
+}
+nav {
+    font-family: 'Courier New', Courier, monospace;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    
+    
+  }
+
+nav a {
+    text-decoration: none;
+    background-color: rgb(77, 103, 112);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+nav h1 {
+    text-align: center;
+    color: aliceblue;
+}
+  
+nav a:hover {
+    background-color: rgb(160, 192, 202);
+  }
+
+nav h3 {
+    text-align:center;
+  }
+
+.divhome {
+    color: aliceblue;
+    height: 320px;
+    width: 100%;
+    text-align: center;
+   }

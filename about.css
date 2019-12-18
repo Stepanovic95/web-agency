@@ -3,6 +3,7 @@ html {
     background-color: black;
     font-size: 12px;
     font-family: "Courier New", Courier, monospace;
+    margin: 0;
 }
 
 body {
@@ -336,6 +337,21 @@ nav h3 {
     border-bottom: 1px double rgb(45, 45, 45);
 }
 
+@media screen and (min-width: 768px) {
+    .structure {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .team-text {
+        width: 40%;
+    }
+
+    .team-members {
+        width: 60%;
+    }
+}
+
 /* Investor section */
 .investor {
     background-color: rgb(45, 45, 45);
@@ -391,14 +407,6 @@ tr:nth-child(odd) {
     background-color: white;
 }
 
-/* tr:hover {
-    background-color: #CCFFFF;
-}
-
-td:hover {
-    background-color: #F36F48;
-} */
-
 #iDownload {
     color: rgb(62, 231, 173);
     border: 3px double rgb(62, 231, 173);
@@ -418,13 +426,36 @@ td:hover {
     color: white;
 }
 
+@media screen and (min-width: 768px) {
+    .investor {
+        height: auto;
+        justify-content: space-around;
+    }
+
+    table {
+        width: 600px;
+    }
+
+    .share {
+        width: 300px;
+    }
+
+    #iDownload {
+        width: 30%;
+        margin-bottom: 30px;
+    }
+
+    .investor>h2 {
+        margin-top: 30px;
+    }
+}
+
 /* News section */
 .news {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
 }
 
 .news>h2 {
@@ -456,14 +487,7 @@ td:hover {
     align-items: center;
 }
 
-/* .latest-news>img {
-    width: 20%;
-    height: auto;
-    padding: 20px;
-} */
-
 .n-text {
-    /* width: 80%; */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -480,6 +504,32 @@ td:hover {
 
 .grey {
     color: rgb(113, 113, 113);
+}
+
+@media screen and (min-width: 768px) {
+    .news-all {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .first-news {
+        width: 60%;
+        padding: 20px;
+        margin-top: 0;
+    }
+
+    .latest-news-both {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+
+    .latest-news {
+        border-left: 1px solid rgb(45, 45, 45);
+        border-top: 1px solid rgb(45, 45, 45);
+    }
 }
 
 /* Offices section */
@@ -499,6 +549,16 @@ td:hover {
 .offices>img {
     margin-bottom: 30px;
 }
+
+@media screen and (min-width: 768px) {
+    .offices {
+        flex-direction: column;
+    }
+    #map {
+        width: 30%;
+    }
+}
+
 
 /* Footer section */
 footer {
@@ -532,6 +592,16 @@ footer {
     display: flex;
     align-items: flex-end;
 }
+
+@media screen and (min-width: 768px) {
+    .follow-icons {
+        width: 20%;
+    }
+    .footer-top>h2 {
+        margin-bottom: 30px;
+    }
+}
+
 
 
 

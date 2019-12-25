@@ -1,0 +1,205 @@
+/* Marko inicijalno */
+.row {
+    margin: 15px;
+  }
+main {
+background-image: url(https://scx2.b-cdn.net/gfx/news/hires/2012/andromedawan.jpg); 
+background-size: cover; /*ovde sam dodala rec background, menja se slika skroz */
+display: flex;
+flex-direction: column;
+}
+
+/* odavde sam ja dodala i sve sam stavila u main da bi se zadrzao background img - obrisi ovo kad procitas :D */
+/* Unversal styles */
+body {
+  background-color: black;
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 4px;
+  text-align: center;
+  text-size-adjust: 100%;
+  text-transform: uppercase;
+  visibility: visible;
+}
+
+h2 {
+  color: rgb(113, 113, 113);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  text-align: center;
+  text-size-adjust: 100%;
+  text-transform: uppercase;
+  visibility: visible;
+}
+
+/* Nav bar */
+.desktop {
+  display: none;
+  z-index: 5;
+}
+
+.mobile {
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(113, 113, 113);
+  font-size: 18px;
+  font-weight: 400;
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  z-index: 5;
+}
+
+.fa-rocket {
+  font-size: 30px;
+  font-family: 'FontAwesome';
+}
+
+.fa-bars {
+  font-size: 30px;
+  font-family: 'FontAwesome';
+  font-style: normal;
+}
+
+.dropbtn {
+  background-color: inherit;
+  color: rgb(113, 113, 113);
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #EFEFEF;
+  font-size: 12px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 12px;
+  border-bottom: rgb(113, 113, 113);
+  text-decoration: none;
+  display: block;
+
+}
+.dropdown-content a:hover {background-color: rgb(113, 113, 113);}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {color: rgb(62, 231, 173);}
+
+
+@media only screen and (min-width: 768px) {
+  .mobile {
+      display: none;
+  }
+  
+  .desktop {
+      font-family: 'Courier New', Courier, monospace;
+      color: rgb(113, 113, 113);
+      font-size: 18px;
+      font-weight: 400;
+      position: sticky;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 10px;
+  }
+  
+  .fa-rocket {
+      font-size: 30px;
+      font-family: 'FontAwesome';
+  }
+
+  .nav-headings>a {
+      text-decoration: none;
+      color: rgb(113, 113, 113);
+      font-size: 18px;
+      font-weight: 400;
+  }
+
+  .nav-headings>a:hover {
+      color: white;
+  }
+
+  .nav-headings {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 35%;
+  }
+}
+
+/* Footer section */
+footer {
+  display: flex; 
+  flex-direction: column;
+  background-color: black;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.follow-icons {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.follow-icons>a>img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.footer-bottom {
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.grey {
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(113, 113, 113);
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .follow-icons {
+      width: 20%;
+  }
+  .footer-top>h2 {
+      margin-bottom: 30px;
+  }
+
+  footer {
+      border-top: 1px solid rgb(45, 45, 45);;
+  }
+}

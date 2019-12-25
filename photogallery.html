@@ -5,53 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gallery</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="gallery.css">
+    <!-- <link rel="stylesheet" href="about.css"> -->
+    <link rel="stylesheet" href="photogallery.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Gallery</title>
 
 </head>
 
 <body>
-      <!-- Nav bar -->
-      <nav class="mobile">
-            <div>
-                <i class="fas fa-rocket"></i>
-                <span>AirSpace</span>
+    <!-- Nav bar -->
+    <nav class="mobile">
+        <div>
+            <i class="fas fa-rocket"></i>
+            <span>AirSpace</span>
+        </div>
+
+        <div class="dropdown" style="float:right;">
+            <button class="dropbtn"><i class="fas fa-bars"></i></button>
+            <div class="dropdown-content" style="right:0;">
+                <a href="index.html">Homepage</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="photogallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
             </div>
-    
-            <div class="dropdown" style="float:right;">
-                <button class="dropbtn"><i class="fas fa-bars"></i></button>
-                <div class="dropdown-content" style="right:0;">
-                    <a href="index.html">Homepage</a>
-                    <a href="about.html">About</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-            </div>
-    
-        </nav>
-        
-    <div class="container">
-        <div class="row">
-            <a href="https://wallpapersite.com/images/pages/pic_w/12926.jpg" data-toggle="lightbox"
-                data-gallery="gallery" class="col-md-4">
-                <img src="https://wallpapersite.com/images/pages/pic_w/12926.jpg" class="img-fluid rounded">
-            </a>
-            <a href="https://cdn.vox-cdn.com/thumbor/7P2cdaYFzkh2qbkoiDxHFrmcUww=/0x0:3000x1266/1200x800/filters:focal(1260x393:1740x873)/cdn.vox-cdn.com/uploads/chorus_image/image/54447885/CGF_STILL_00032.0.jpg"
-                data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                <img src="https://cdn.vox-cdn.com/thumbor/7P2cdaYFzkh2qbkoiDxHFrmcUww=/0x0:3000x1266/1200x800/filters:focal(1260x393:1740x873)/cdn.vox-cdn.com/uploads/chorus_image/image/54447885/CGF_STILL_00032.0.jpg"
-                    class="img-fluid rounded">
-            </a>
-            <a href="https://i.pinimg.com/originals/73/1f/55/731f55b90a452f13e6b8983df1bd9860.jpg"
-                data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                <img src="https://i.pinimg.com/originals/73/1f/55/731f55b90a452f13e6b8983df1bd9860.jpg"
-                    class="img-fluid rounded">
-            </a>
-            <a href="https://live.staticflickr.com/3796/12658789443_5a429699e1_b.jpg" data-toggle="lightbox"
-                data-gallery="gallery" class="col-md-4">
-                <img src="https://live.staticflickr.com/3796/12658789443_5a429699e1_b.jpg" class="img-fluid rounded">
-        </a>
+        </div>
+
+    </nav>
+    <nav class="desktop">
+        <div>
+            <i class="fas fa-rocket"></i>
+            <span>AirSpace</span>
+        </div>
+        <div class="nav-headings">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="photogallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="container">
+            <div class="row">
+                <a href="https://wallpapersite.com/images/pages/pic_w/12926.jpg" data-toggle="lightbox"
+                    data-gallery="gallery" class="col-md-4">
+                    <img src="https://wallpapersite.com/images/pages/pic_w/12926.jpg" class="img-fluid rounded">
+                </a>
+                <a href="https://cdn.vox-cdn.com/thumbor/7P2cdaYFzkh2qbkoiDxHFrmcUww=/0x0:3000x1266/1200x800/filters:focal(1260x393:1740x873)/cdn.vox-cdn.com/uploads/chorus_image/image/54447885/CGF_STILL_00032.0.jpg"
+                    data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                    <img src="https://cdn.vox-cdn.com/thumbor/7P2cdaYFzkh2qbkoiDxHFrmcUww=/0x0:3000x1266/1200x800/filters:focal(1260x393:1740x873)/cdn.vox-cdn.com/uploads/chorus_image/image/54447885/CGF_STILL_00032.0.jpg"
+                        class="img-fluid rounded">
+                </a>
+                <a href="https://i.pinimg.com/originals/73/1f/55/731f55b90a452f13e6b8983df1bd9860.jpg"
+                    data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                    <img src="https://i.pinimg.com/originals/73/1f/55/731f55b90a452f13e6b8983df1bd9860.jpg"
+                        class="img-fluid rounded">
+                </a>
+                <a href="https://live.staticflickr.com/3796/12658789443_5a429699e1_b.jpg" data-toggle="lightbox"
+                    data-gallery="gallery" class="col-md-4">
+                    <img src="https://live.staticflickr.com/3796/12658789443_5a429699e1_b.jpg"
+                        class="img-fluid rounded">
+                </a>
                 <a href="https://photojournal.jpl.nasa.gov/jpeg/PIA16549.jpg" data-toggle="lightbox"
                     data-gallery="gallery" class="col-md-4">
                     <img src="https://photojournal.jpl.nasa.gov/jpeg/PIA16549.jpg" class="img-fluid rounded">
@@ -62,34 +82,58 @@
                     <img src="https://i.pinimg.com/originals/a9/f9/bb/a9f9bbd7b650d022553465c669db3f2b.jpg"
                         class="img-fluid rounded">
                 </a>
-        </div>
-        <div class="row">
-            <a href="https://fsmedia.imgix.net/34/77/9a/ed/db60/4da1/baaa/abcb5fdad952/a-view-of-jupiter-from-europas-icy-surface.jpeg?crop=edges&fit=crop&auto=format%2Ccompress&dpr=2&h=325&w=650"
-                data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                <img src="https://fsmedia.imgix.net/34/77/9a/ed/db60/4da1/baaa/abcb5fdad952/a-view-of-jupiter-from-europas-icy-surface.jpeg?crop=edges&fit=crop&auto=format%2Ccompress&dpr=2&h=325&w=650"
-                    class="img-fluid rounded">
-            </a>
-            <a href=https://cdna.artstation.com/p/assets/images/images/019/861/476/large/kostyantin-osmolovskyy-moon-surface-art-02.jpg?1565303728"
-                data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                <img src="https://cdna.artstation.com/p/assets/images/images/019/861/476/large/kostyantin-osmolovskyy-moon-surface-art-02.jpg?1565303728"
-                    class="img-fluid rounded">
-            </a>
-            <a href="https://cdnb.artstation.com/p/assets/images/images/012/995/147/large/fernando-garcia-uranus-atmosphere-for-behance.jpg?1537538016"
-                data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                <img src="https://cdnb.artstation.com/p/assets/images/images/012/995/147/large/fernando-garcia-uranus-atmosphere-for-behance.jpg?1537538016"
-                    class="img-fluid rounded">
+            </div>
+            <div class="row">
+                <a href="https://fsmedia.imgix.net/34/77/9a/ed/db60/4da1/baaa/abcb5fdad952/a-view-of-jupiter-from-europas-icy-surface.jpeg?crop=edges&fit=crop&auto=format%2Ccompress&dpr=2&h=325&w=650"
+                    data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                    <img src="https://fsmedia.imgix.net/34/77/9a/ed/db60/4da1/baaa/abcb5fdad952/a-view-of-jupiter-from-europas-icy-surface.jpeg?crop=edges&fit=crop&auto=format%2Ccompress&dpr=2&h=325&w=650"
+                        class="img-fluid rounded">
+                </a>
+                <a href=https://cdna.artstation.com/p/assets/images/images/019/861/476/large/kostyantin-osmolovskyy-moon-surface-art-02.jpg?1565303728"
+                    data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                    <img src="https://cdna.artstation.com/p/assets/images/images/019/861/476/large/kostyantin-osmolovskyy-moon-surface-art-02.jpg?1565303728"
+                        class="img-fluid rounded">
+                </a>
+                <a href="https://cdnb.artstation.com/p/assets/images/images/012/995/147/large/fernando-garcia-uranus-atmosphere-for-behance.jpg?1537538016"
+                    data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                    <img src="https://cdnb.artstation.com/p/assets/images/images/012/995/147/large/fernando-garcia-uranus-atmosphere-for-behance.jpg?1537538016"
+                        class="img-fluid rounded">
 
-            </a>
+                </a>
 
+            </div>
         </div>
-    </div>
+
+        <p style="text-align: center; color: white; font-size: 120%;"> Here are some of the pictures some of our guests
+            have
+            taken over time, we hope to see some from you as well!</p>
+
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <h2>Follow us</h2>
+            <div class="follow-icons">
+                <a href="https://facebook.com"><img class="img" src="pics/facebook.jpg" alt="facebook" height="50px"
+                        width="50px"></a>
+                <a href="https://twitter.com"><img class="img" src="pics/twitter.jpg" alt="twitter" height="50px"
+                        width="50px"></a>
+                <a href="https://linkedin.com"><img class="img" src="pics/linkedin.jpg" alt="linkedin" height="50px"
+                        width="50px"></a>
+                <a href="https://youtube.com"><img class="img" src="pics/youtube.jpg" alt="youtube" height="50px"
+                        width="50px"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="grey">© 2019 AirSpace. All rights received</span>
+        </div>
+    </footer>
+
     <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js> </script> <script
         src=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js> </script> <script
         src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"> </script>
 
     <script src="javascript/gallery.js"></script>
-    <p style="text-align: center; color: white; font-size: 120%;"> Here are some of the pictures some of our guests have
-        taken over time, we hope to see some from you as well!</p>
 
 </body>
 

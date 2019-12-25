@@ -1,0 +1,16 @@
+main {
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+footer {
+    background-color: black;
+    width: 100%;
+}
+

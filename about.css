@@ -672,6 +672,10 @@ footer {
     .footer-top>h2 {
         margin-bottom: 30px;
     }
+
+    footer {
+        border-top: 1px solid rgb(45, 45, 45);;
+    }
 }
 
 

@@ -5,21 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="mainagency.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
     <title>Portfolio</title>
-
     <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <nav>
-        <a href="index.html">HOME</a>
-        <a href="about.html">ABOUT</a>
-        <a href="portfolio.html">PORTFOLIO</a>
-        <a href="Contact.html">CONTACT</a>
+    <!-- Nav bar -->
+    <nav class="mobile">
+        <div>
+            <i class="fas fa-rocket"></i>
+            <span>AirSpace</span>
+        </div>
+
+        <div class="dropdown" style="float:right;">
+            <button class="dropbtn"><i class="fas fa-bars"></i></button>
+            <div class="dropdown-content" style="right:0;">
+                <a href="index.html">Homepage</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="photogallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
     </nav>
-    <h1>Portfolio</h1>
+    <nav class="desktop">
+        <div>
+            <i class="fas fa-rocket"></i>
+            <span>AirSpace</span>
+        </div>
+        <div class="nav-headings">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="photogallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    
+    <!-- Main part of page -->
+    <main>
+        <h1>Portfolio</h1>
+    </main>
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <h2>Follow us</h2>
+            <div class="follow-icons">
+                <a href="https://facebook.com"><img class="img" src="pics/facebook.jpg" alt="facebook" height="50px"
+                        width="50px"></a>
+                <a href="https://twitter.com"><img class="img" src="pics/twitter.jpg" alt="twitter" height="50px"
+                        width="50px"></a>
+                <a href="https://linkedin.com"><img class="img" src="pics/linkedin.jpg" alt="linkedin" height="50px"
+                        width="50px"></a>
+                <a href="https://youtube.com"><img class="img" src="pics/youtube.jpg" alt="youtube" height="50px"
+                        width="50px"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="grey">© 2019 AirSpace. All rights received</span>
+        </div>
+    </footer>
 </body>
 
 </html>

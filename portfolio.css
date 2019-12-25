@@ -1,0 +1,16 @@
+main {
+    background-image: url(https://scx2.b-cdn.net/gfx/news/hires/2012/andromedawan.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+/* note: proveriti moze li da se smanji opacity od background img */
+
+
+footer {
+    background-color: black;
+    width: 100%;
+}
+

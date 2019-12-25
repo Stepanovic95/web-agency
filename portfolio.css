@@ -14,3 +14,16 @@ footer {
     width: 100%;
 }
 
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+
+@each $color, $value in $theme-colors {
+    @if ((lightness($value)) < 60 and (hue($value)) > 45) {
+        .bg-#{$color} {
+            @extend .text-light
+        }
+    }
+}
+
+/* remember to import Bootstrap after the changes */ 
+@import "bootstrap";

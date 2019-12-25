@@ -1,5 +1,59 @@
 footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
+}
+
+.footer-bottom {
+    justify-content: space-between;
+    color: white;
+}
+
+
+.all-forms {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 40%; */
+}
+
+/* .forms {
+    width: 100%;
+} */
+
+.two-in-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 30px;
+}
+
+#iMessage {
+    width: 200px;
+}
+
+.each-input {
+    margin-right: 10px;
+    border-radius: 10px;
+    /* width: 100px;
+    height: 30px; */
+}
+
+#iButton {
+    color: rgb(62, 231, 173);
+    border: 3px double rgb(62, 231, 173);
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    letter-spacing: 4px;
+    /* width: 20%; */
+    background-color: black;
+}
+
+#iButton:hover {
+    background-color: rgb(62, 231, 173);
+    color: white;
 }

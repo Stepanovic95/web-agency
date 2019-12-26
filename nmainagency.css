@@ -14,3 +14,76 @@ footer {
     width: 100%;
 }
 
+#carouselExampleControls{
+    display: block;
+}
+#artikli h3{
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(62, 231, 173);
+
+
+}
+#artikli h3:hover{
+    background-color: black;
+    color: white;
+}
+.ponuda{
+    border: 1px solid rgb(62, 231, 173);
+    border-radius: 8px;
+    margin: 5px 10px;
+    
+}
+
+.ponuda:hover{
+    opacity: 0.5;
+    background-color: black;
+    transition-duration: 1s;
+    
+}
+
+.carsinner h3{
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgb(62, 231, 173);
+}
+.pasus{
+    color: white;
+}
+.slika:hover{
+    opacity: 0,2;
+}
+
+
+@media screen and (min-width: 768px){
+    #artikli{
+        display: flex;
+        justify-content: space-around;
+        height: 300px;
+    }
+    h2{
+        display: block;
+        text-align: center;
+    }
+
+.cars{
+    display: flex;
+    justify-content: space-between;
+}
+.slika{
+    width: 400px;
+    height: 200px;
+    
+    
+}
+.slika:hover{
+    opacity: 0.2;
+}
+.okvirslika{
+    display: flex;
+    justify-content: center;
+}
+.carsinner{
+    width: 33%;
+}
+}

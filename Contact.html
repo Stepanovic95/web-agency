@@ -23,7 +23,7 @@
         <div class="dropdown" style="float:right;">
             <button class="dropbtn"><i class="fas fa-bars"></i></button>
             <div class="dropdown-content" style="right:0;">
-                <a href="index.html">Homepage</a>
+                <a href="nindex.html">Homepage</a>
                 <a href="about.html">About</a>
                 <a href="portfolio.html">Portfolio</a>
                 <a href="photogallery.html">Gallery</a>
@@ -38,7 +38,7 @@
             <span>AirSpace</span>
         </div>
         <div class="nav-headings">
-            <a href="index.html">Home</a>
+            <a href="nindex.html">Home</a>
             <a href="about.html">About</a>
             <a href="portfolio.html">Portfolio</a>
             <a href="photogallery.html">Gallery</a>
@@ -54,35 +54,35 @@
         <form action="PUSH" class="forms">
             <div class="two-in-row">
                 <div class="each-input">
-                    <input type="text" name="nName" id="iName" placeholder="Name">
+                    <input class="input" type="text" name="nName" id="iName" placeholder="Name">
                 </div>
                 <div class="each-input">
-                    <input type="text" name="nSurname" id="iSurname" placeholder="Surname">
-                </div>
-            </div>
-
-            <div class="two-in-row">
-                <div class="each-input">
-                    <input type="email" name="nMail" id="iMail" placeholder="someone@mail.com">
-                </div>
-                <div class="each-input">
-                    <input type="number" name="nTel" id="iTel" placeholder="Phone number">
+                    <input class="input" type="text" name="nSurname" id="iSurname" placeholder="Surname">
                 </div>
             </div>
 
             <div class="two-in-row">
                 <div class="each-input">
-                    <input type="text" name="nCity" id="iCity" placeholder="City">
+                    <input class="input" type="email" name="nMail" id="iMail" placeholder="someone@mail.com">
                 </div>
                 <div class="each-input">
-                    <input type="date" name="bday" id="iBirth" placeholder="Year of birth" min="1900-01-01"
+                    <input class="input" type="number" name="nTel" id="iTel" placeholder="Phone number">
+                </div>
+            </div>
+
+            <div class="two-in-row">
+                <div class="each-input">
+                    <input class="input" type="text" name="nCity" id="iCity" placeholder="City">
+                </div>
+                <div class="each-input">
+                    <input class="input" type="date" name="bday" id="iBirth" placeholder="Year of birth" min="1900-01-01"
                         max="2019-12-31">
                 </div>
             </div>
 
-            <textarea name="nMessage" id="iMessage" cols="30" rows="10" placeholder="Message"></textarea>
+            <textarea class="input" name="nMessage" id="iMessage" minlength="25" maxlength="150" cols="30" rows="10" placeholder="Message"></textarea>
             <div>
-                <input type="submit" id="iButton" value="SEND">
+                <input class="input" type="submit" id="iButton" value="SEND">
             </div>
         </form>
 

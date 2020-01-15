@@ -1,45 +1,59 @@
+h1 {
+    margin: 40px 0px;
+}
+
 footer {
     width: 100%;
 }
 
 .footer-bottom {
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: flex-start;
     color: white;
+    flex-direction: column-reverse;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
 
 .all-forms {
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 40%; */
+    align-content: center;
 }
-
-/* .forms {
-    width: 100%;
-}  */
 
 .two-in-row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 20px;
-    width: 200px;
-    height: 30px;
-}
-
-#iMessage {
-    width: 200px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
 }
 
 .each-input {
-    margin-right: 10px;
-    border-radius: 10px;
-    /* width: 100px;
-    height: 30px; */
+    display: flex;
+    flex-direction: column;
 }
-#iBirth{
-    width: 168px;
+
+.input {
+    height: 30px;
+    width: 200px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+#iMessage {
+    height: 150px;
+    width: 200px;
 }
 
 #iButton {
@@ -51,28 +65,38 @@ footer {
     font-size: 12px;
     padding: 10px 20px;
     margin-top: 30px;
+    margin-bottom: 30px;
     letter-spacing: 4px;
-    /* width: 20%; */
     background-color: black;
+    width: 200px;
 }
 
 #iButton:hover {
     background-color: rgb(62, 231, 173);
     color: white;
 }
-@media screen and (max-width: 768px){
+
+label {
+    padding: 2px;
+}
+
+@media screen and (min-width: 768px){
 .two-in-row{
-    display: block;
-    justify-content: stretch;
-    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 430px;
+}
+
+.each-input {
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: space-between;
     width: 100%;
-    border-radius: 8px;
 }
-.input{
-    border-radius: 3px;
+
+#iMessage {
     width: 100%;
 }
-#iBirth{
-    width: 168px;
-}
+
 }

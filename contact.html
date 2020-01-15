@@ -47,54 +47,47 @@
     </nav>
 
     <h1>Contact Us</h1>
-    <h2>Damjanovi zadaci</h2>
-
 
     <div class="all-forms">
         <form action="PUSH" class="forms">
+
             <div class="two-in-row">
+                <label for="iName">NAME AND SURNAME</label>
                 <div class="each-input">
                     <input class="input" type="text" name="nName" id="iName" placeholder="Name">
-                </div>
-                <div class="each-input">
                     <input class="input" type="text" name="nSurname" id="iSurname" placeholder="Surname">
                 </div>
             </div>
 
             <div class="two-in-row">
+                <label for="iMail">MAIL AND PHONE</label>
                 <div class="each-input">
                     <input class="input" type="email" name="nMail" id="iMail" placeholder="someone@mail.com">
-                </div>
-                <div class="each-input">
                     <input class="input" type="number" name="nTel" id="iTel" placeholder="Phone number">
                 </div>
             </div>
 
             <div class="two-in-row">
+                <label for="iCity">CITY AND DATE OF BIRTH</label>
                 <div class="each-input">
                     <input class="input" type="text" name="nCity" id="iCity" placeholder="City">
-                </div>
-                <div class="each-input">
                     <input class="input" type="date" name="bday" id="iBirth" placeholder="Year of birth" min="1900-01-01"
                         max="2019-12-31">
                 </div>
             </div>
-
-            <textarea class="input" name="nMessage" id="iMessage" minlength="25" maxlength="150" cols="30" rows="10" placeholder="Message"></textarea>
+            
+            <div class="two-in-row">
+                <label for="iMessage">SEND US MESSAGE</label>
+                <textarea class="input" name="nMessage" id="iMessage" minlength="25" maxlength="150" cols="30" rows="10" placeholder="Message"></textarea>
+            </div>
+            
+            
             <div>
-                <input class="input" type="submit" id="iButton" value="SEND">
+                <input type="submit" id="iButton" value="SEND">
             </div>
         </form>
 
-
-
     </div>
-    <p>
-        4. Srediti Kontakt formu (dodati obavezna polja: ime, prezime, email i poruka, i opciona polja:
-        telefon, grad i godiste; iskoristiti odgovarajuce tipova polja: number, email...; poruka mora da ima najmanje 25
-        a najvise 150 karaktera). Forma mora da bude responzivna, da ima jedan red na mobilnim, a dva reda na vecim
-        uredjajima.
-    </p>
 
     <!-- Footer -->
     <footer>
@@ -113,7 +106,7 @@
         </div>
         <div class="footer-bottom">
             <span class="grey">© 2019 AirSpace. All rights received</span>
-            <div id="current-date"></div>
+            <div class="grey" id="current-date"></div>
         </div>
     </footer>
 

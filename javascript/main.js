@@ -1,11 +1,7 @@
-var today = new Date();
-var y = today.getFullYear();
-var mon = today.getMonth() + 1;
-var d = today.getDate();
-var h = today.getHours();
-var m = today.getMinutes();
-var s = today.getSeconds();
+// Live date - on Contact page
+let myDate = setInterval (myTimer, 1000);
 
-document.getElementById("current-date").innerText = d + "/" + mon + "/" + y + " " + h + ":" + m + ":" + s;
-
-
+function myTimer() {
+    var d = new Date();
+    document.getElementById("current-date").innerHTML = d.toLocaleString();
+}
